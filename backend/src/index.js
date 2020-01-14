@@ -5,7 +5,12 @@ const app = express();
 
 mongoose.connect(
   "mongodb+srv://Yan:Left_4_dead*@cluster0-t71xe.mongodb.net/week10?retryWrites=true&w=majority",
-  { useNewUrlParser: true, useUnifiedTopology: true }
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true
+  }
 );
 
 app.use(express.json());
