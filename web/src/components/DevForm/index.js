@@ -32,6 +32,8 @@ function DevForm({ onSubmit }) {
       longitude
     });
 
+    console.log(e.data);
+
     setGithub_username("");
     setTechs("");
   }
